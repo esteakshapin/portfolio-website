@@ -1,0 +1,20 @@
+{% extends '/partials/body/sections/work/work_tiles/_work_tiles.html' %}
+{% set company_title='Talos Mangemnt Systems' %}
+{% set company_img_src='static/resources/talos_icon.png' %}
+{% set company_role_title='Software Engineer Intern' %}
+{% set date='Jun 2020 - Present' %}
+
+{% block body_nav %}
+  <h2 class="body_nav_item active" onclick="body_nav_item_process(this)">Experience</h2>
+  <h2 class="body_nav_item" onclick="body_nav_item_process(this)">Reference</h2>
+{% endblock %}
+
+{% block body_content %}
+  <div class="body_nav_item_1_content">
+    {% include "/partials/body/sections/work/work_companies/talos/_talos_work_experience.html" %}
+  </div>
+  <div class="body_nav_item_2_content hidden">
+    {% include "/partials/body/sections/work/work_companies/talos/_talos_reference_statement.html" %}
+  </div>
+
+{% endblock %}

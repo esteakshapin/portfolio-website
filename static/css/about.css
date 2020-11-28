@@ -1,0 +1,42 @@
+/* roundabout img slider */
+.roundabout-holder {
+  padding: 0;
+  height: 300px;
+  width: 100%;
+  list-style-type: none;
+  overflow-x: hidden;
+}
+.roundabout-moveable-item {
+  width: 50%;
+  height:70%;
+  cursor: pointer;
+  background-color: gray;
+  border: 1px solid #999;
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+
+}
+.roundabout-in-focus {
+  cursor: auto;
+
+}
+
+.roundabout-holder  img{
+  width:auto;
+  height:auto;
+  max-width:100%;
+  max-height:100%;
+}
+
+.about_module .summary{
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: #F0F0F0;
+}

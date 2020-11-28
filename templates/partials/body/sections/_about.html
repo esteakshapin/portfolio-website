@@ -1,0 +1,37 @@
+{% extends 'partials/body/sections/_section.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="static/css/about.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="static/js/roundabout/jquery.roundabout.js"></script>
+<script type="text/javascript" src="static/js/roundabout/jquery.roundabout-shapes.min.js"></script>
+<script src="static/js/about.js" charset="utf-8"></script>
+{% endblock %}
+
+{% block module_class_name %} about_module {% endblock %}
+
+{% block section_title %} About {% endblock %}
+
+{% block body %}
+
+  <!-- roundabout image slide -->
+
+  <ul id="myRoundabout">
+    <div class="moveable" style="background-image: url('static/resources/facebook_pfp.png')">
+    </div>
+    <div class="moveable" style="background-image: url('static/resources/shapin_with_tie.jpg')">
+    </div>
+    <div class="moveable" style="background-image: url('static/resources/shapin_with_tamin.JPG')">
+    </div>
+  </ul>
+
+  <!-- summary  -->
+  <div class="summary">
+    <p>
+      Knowledgeable and skilled software development student who is dedicated
+      and eager to learn. Skilled at quick learning, developing, and optimizing
+      systems to solve high level problems. Great at working in a team
+      environment and have exceptional work ethic!
+    </p>
+  </div>
+{% endblock %}

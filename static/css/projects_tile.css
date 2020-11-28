@@ -1,0 +1,114 @@
+.project_tile{
+  width: calc(47% - 1rem);
+  padding:1rem;
+  height:300px;
+  margin-bottom: 1rem;
+  background-color:#E0E0E0;
+  position: relative;
+  border-radius: var(--work_tile-border-radius);
+  display:flex;
+  flex-direction: column;
+}
+
+/* removing styling from link on the project tile title */
+.project_tile a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.project_tile a:hover{
+  text-decoration: underline;
+  color:initial;
+}
+
+
+.project_tile_info{
+  width:100%;
+  position:relative;
+}
+.project_tile_info_title{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  color:#8A939C
+}
+.project_tile_info_tags{
+  width: 100%;
+  display:flex;
+  flex-wrap: wrap;
+}
+.project_tile_info_tags > .status{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #52D1D9;
+  margin-right:15px;
+}
+
+.project_tile_info_tags > .tag {
+  font-family: Poppins;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  border-radius: 100em 100em 100em 100em;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  margin:5px 5px;
+}
+
+.project_tile_extended_info{
+  margin: 0;
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: var(--project-tile-transition);
+}
+
+.project_img{
+  flex: 1;
+  max-height:100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+  transition: var(--project-tile-transition);
+}
+
+/* collapsing top div and expanding bottom div to create illusion */
+.project_tile:hover > .project_img{
+  max-height: 0;
+}
+
+.project_tile:hover > .project_tile_extended_info{
+  flex: 1;
+  background-color: #D4D4D4;
+  margin: 3rem 1rem 1rem 1rem;
+  padding: 1rem;
+  font-family: Poppins;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+  overflow: auto;
+  max-height:100%;
+}
+
+/* removing margin on the left to give tile little more room */
+@media only screen and (max-width: 700px){
+  .project_tile{
+    width: calc(100% - 1rem);
+    max-width: 320px;
+  }
+}

@@ -1,0 +1,10 @@
+.skills_outer_container{
+  display: flex;
+  justify-content: center;
+}
+
+.skills_inner_container{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}

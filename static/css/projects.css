@@ -1,0 +1,14 @@
+.project_tile_container{
+  width: 100%;
+  position: relative;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* making tile align in the center */
+@media only screen and (max-width: 700px){
+  .project_tile_container{
+    justify-content: space-around;
+  }
+}

@@ -1,0 +1,22 @@
+<div class="project_tile" >
+  <div class="project_img center_background_img" style="background-image:url('{{project_img}}')">
+  </div>
+  <div class="project_tile_info">
+    <div class="project_tile_info_title">
+      <a href="{{link}}">{{title}}</a>
+    </div>
+    <div class="project_tile_info_tags">
+      <div class="status">
+        {{status}}
+      </div>
+      {% block tags %}
+
+      {% endblock %}
+    </div>
+  </div>
+  <div class="project_tile_extended_info">
+    {% block extended_info %}
+
+    {% endblock %}
+  </div>
+</div>

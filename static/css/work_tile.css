@@ -1,0 +1,139 @@
+/* work tile genral characteristic */
+.work_tile{
+  width: calc(100% - 40px);
+  height: inherit;
+  background-color: var(--theme-primary-pink);
+  border-radius: var(--work_tile-border-radius);
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+  transition: height 2s;
+  margin-bottom: 2rem;
+}
+
+
+/* title section */
+.title_section{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.company_img{
+  width: 50px;
+  height: 50px;
+  /* background-color: grey; */
+  padding: 15px;
+  margin-left: 10px;
+}
+
+.company_img img{
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.title_text{
+  padding: 15px;
+  padding-left: 0px;
+}
+
+.title_text h2, h4{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  color: #F0F0F0;
+}
+.title_text .date{
+  color: 	#fedad3;
+}
+
+
+/* plus button */
+.work_tile .expand_plus{
+  position: absolute;
+  font-size: 3rem;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  bottom:-10px;
+  right: -20px;
+  border-radius: 50%;
+  background-color: white;
+  cursor: ns-resize;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.expand_plus span{
+  color: var(--theme-dark-blue)
+}
+/* button characteristic for when tile is shortened */
+.work_tile .plus{
+  bottom:calc(50% - 20px);
+  right: -20px;
+}
+
+
+/* work tile body section */
+.body_section{
+  padding-left: 25px;
+}
+/* body navbar */
+.body_nav{
+  display: flex;
+  flex-direction: row;
+}
+.body_nav > *{
+  padding: 0;
+  margin: 0;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: normal;
+  cursor: pointer;
+  /* line-height: 29px; */
+  /* identical to box height */
+
+  color: #000000;
+}
+/* characteristic selected nav item */
+.body_nav .active{
+  border-bottom: solid var(--theme-dark-blue)
+}
+
+
+/* body content genral */
+.body_content{
+  margin:0;
+  padding: 2rem;
+  margin-bottom: 20px;
+  /* display: flex;
+  align-items: center; */
+
+  color: #F0F0F0;
+}
+
+.hidden{
+  display: none;
+}
+.show{
+  display: inherit;
+}
+
+/* removing margin on the left to give tile little more room */
+@media only screen and (max-width: 700px){
+  .work_tile{
+    width: calc(100% - 20px);
+    margin-left: 0px;
+  }
+}

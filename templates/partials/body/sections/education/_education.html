@@ -1,0 +1,14 @@
+{% extends 'partials/body/sections/_section.html' %}
+
+
+{% block module_class_name %} education_module {% endblock %}
+
+{% block section_title %} Education {% endblock %}
+
+{% block body %}
+<link rel="stylesheet" href="static/css/education.css" >
+<script src="static/js/education.js" charset="utf-8"></script>
+  {% include '/partials/body/sections/education/schools/_stuyvesant.html' %}
+  {% include '/partials/body/sections/education/schools/_mark_twain.html' %}
+
+{% endblock %}

@@ -1,0 +1,10 @@
+<link rel="stylesheet" href="static/css/section.css">
+{% block head %}{% endblock %}
+<!-- sectiom module -->
+<div class="{% block module_class_name %}{% endblock %} section">
+  <!-- title -->
+  <h2 class="section_title">{% block section_title %} {% endblock %}</h2>
+
+  <!-- body  -->
+  {% block body %}{% endblock %}
+</div>

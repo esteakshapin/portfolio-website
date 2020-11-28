@@ -1,0 +1,61 @@
+{% extends 'partials/body/sections/_section.html' %}
+
+
+{% block module_class_name %} skills_module {% endblock %}
+
+{% block section_title %} Skills {% endblock %}
+
+{% block body %}
+  <link rel="stylesheet" href="static/css/skills.css">
+  <link rel="stylesheet" href="static/css/skills_tiles.css">
+  <script src="static/js/skills.js" charset="utf-8"></script>
+  <div class="skills_outer_container">
+    <div class="skills_inner_container">
+      <!-- include all the skill tiles needed with a title and percentage -->
+      {% with title='Python', percent='80'%}
+        {% include '/partials/body/sections/skills/_skills_tiles.html' %}
+      {% endwith %}
+
+      {% with title='Java', percent='75'%}
+        {% include '/partials/body/sections/skills/_skills_tiles.html' %}
+      {% endwith %}
+
+      {% with title='Django', percent='65'%}
+        {% include '/partials/body/sections/skills/_skills_tiles.html' %}
+      {% endwith %}
+
+      {% with title='HTMl', percent='75'%}
+        {% include '/partials/body/sections/skills/_skills_tiles.html' %}
+      {% endwith %}
+
+      {% with title='Javascript', percent='53'%}
+        {% include '/partials/body/sections/skills/_skills_tiles.html' %}
+      {% endwith %}
+
+      {% with title='Jquery', percent='50'%}
+        {% include '/partials/body/sections/skills/_skills_tiles.html' %}
+      {% endwith %}
+
+      {% with title='UX design', percent='66'%}
+        {% include '/partials/body/sections/skills/_skills_tiles.html' %}
+      {% endwith %}
+
+      {% with title='Flutter', percent='43'%}
+        {% include '/partials/body/sections/skills/_skills_tiles.html' %}
+      {% endwith %}
+
+      {% with title='Flask', percent='30'%}
+        {% include '/partials/body/sections/skills/_skills_tiles.html' %}
+      {% endwith %}
+
+      {% with title='Android App', percent='56'%}
+        {% include '/partials/body/sections/skills/_skills_tiles.html' %}
+      {% endwith %}
+
+      {% with title='Project Management', percent='78'%}
+        {% include '/partials/body/sections/skills/_skills_tiles.html' %}
+      {% endwith %}
+    </div>
+  </div>
+
+{% endblock %}

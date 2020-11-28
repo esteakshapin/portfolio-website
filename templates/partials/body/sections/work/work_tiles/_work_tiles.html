@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="static/css/work_tile.css">
+<script type="text/javascript" src="static/js/work_tile.js"></script>
+{% block head %}{% endblock %}
+
+<div class="work_tile">
+  <div class="title_section">
+    <div class="company_img">
+      <img src="{{company_img_src}}" alt="">
+    </div>
+    <div class="title_text">
+      <!-- company title -->
+      <h2>{{company_title}}</h2>
+
+      <!-- subtitle -->
+      <div class="subtitle_section">
+        <h4>{{company_role_title}}</h4>
+        <h4><span class='date'>{{date}}</span></h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="body_section hidden">
+    <div class="body_nav">
+      {% block body_nav %}
+      {% endblock %}
+    </div>
+    <div class="body_content">
+      {% block body_content %}
+      {% endblock %}
+    </div>
+  </div>
+  <div class="expand_plus plus" onclick="expand_work_tile(this)">
+    <span>+</span>
+  </div>
+</div>

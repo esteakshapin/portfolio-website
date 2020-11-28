@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Exo|Exo+2|Ubuntu|Poppins);
+@import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
+html, body{
+  margin: 0;
+  padding: 0;
+  background-color: #F0F0F0;
+}
+
+:root {
+  /* Base font size */
+  font-size: 10px;
+
+  /* Set neon color */
+  --neon-text-color: #f40;
+  --neon-border-color: #08f;
+
+  /* theme color */
+  --theme-dark-blue: #8A939C;
+  --theme-primary-pink: #F194A3;
+  --theme-secondary-pink: #FEDAD3;
+  --theme-light-blue: #52D1D9;
+
+  /* work_tile */
+  --work_tile-border-radius: 25px;
+
+  /* triangle size */
+  --triangle-size:3rem;
+
+  /* default box shadow */
+  --default-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  /* body width */
+  --default-body-width:100%;
+  --max-body-width: 700px;
+
+  /* default education_tile_line_color */
+  --education-tile-line-color: #C4C4C4;
+
+  /* project tile transition time */
+  --project-tile-transition: max-height .2s;
+
+  /* tag color for projects tile */
+  --projects-tag-flask: #CED950;
+  --projects-tag-jquery: #B1D49C;
+  --projects-tag-gmap: #8A939C;
+  --projects-tag-css: #D49C9C;
+  --projects-tag-html:#52D1D9;
+
+}
+
+/* body {
+  font-family: 'Exo 2', sans-serif;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  min-height: 100vh;
+} */
+
+.modules_container{
+  width: var(--default-body-width);
+  max-width: var(--max-body-width);
+  background-color: #8A939C;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  position: relative;
+  padding-bottom: 10rem;
+}
+
+@media only screen and (max-width: 700px){
+  .modules_container{
+    margin-top: 0;
+  }
+}
+
+/* centered background img */
+.center_background_img{
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+}

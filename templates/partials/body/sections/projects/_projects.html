@@ -1,0 +1,20 @@
+{% extends 'partials/body/sections/_section.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="static/css/projects.css">
+<link rel="stylesheet" href="static/css/projects_tile.css">
+
+{% endblock %}
+
+{% block module_class_name %} porjects_module {% endblock %}
+
+{% block section_title %} Projects {% endblock %}
+
+{% block body %}
+  <div class="project_tile_container">
+    <!-- acqua_fonte project -->
+    {% include "/partials/body/sections/projects/acqua_fonte/_acqua_fonte_project_tile.html" %}
+    {% include "/partials/body/sections/projects/acqua_fonte/_acqua_fonte_project_tile.html" %}
+
+  </div>
+{% endblock %}

@@ -1,0 +1,106 @@
+.education_outer_container{
+  padding: 0px 5% 0px 5%;
+  /* background-color: green; */
+  display: flex;
+  flex-direction: row;
+
+}
+
+.education_left_container{
+  width: 30px;
+  padding-left: 2rem;
+  /* background-color: red; */
+}
+
+.education_circle{
+  width: 2rem;
+  height: 2rem;
+  margin: auto;
+  background-color: var(--theme-light-blue);
+  border-radius: 50%;
+}
+
+.education_line_top{
+  width: 2px;
+  height: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  background-color: var(--education-tile-line-color);
+}
+
+.education_line_bottom{
+  width: 2px;
+  height: calc(100% - 6rem);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  background-color: var(--education-tile-line-color);
+}
+
+.line_hidden{
+  width: 0px;
+}
+
+.education_right_container{
+  flex: 1;
+  /* background-color: green; */
+}
+
+.education_school_outer_container{
+  background-color: #FEDAD3;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  flex:1;
+  position: relative;
+  border-radius: var(--work_tile-border-radius);
+  box-shadow: var(--default-box-shadow);
+  color: var(--theme-dark-blue);
+}
+
+.education_school_inner_container h1,h3{
+  padding: 0;
+  margin: 0;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+}
+.education_content_subtitle{
+  width: 100%;
+}
+.education_subtitle_subject, .education_subtitle_date{
+  display: inline-block;
+}
+
+.education_subtitle_date{
+  float: right;
+}
+
+.education_school_inner_container li{
+  font-family: Ubuntu;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 24px;
+  font-size: 1.3em;
+}
+
+/* removing margin on the left to give tile little more room */
+@media only screen and (max-width: 700px){
+  .education_outer_container{
+    padding: 0;
+  }
+  .education_left_container{
+    padding-left: 0;
+  }
+}
+/* Placing the date bellow the subject so its not floating right when they overlap */
+@media only screen and (max-width: 500px){
+  .education_subtitle_subject, .education_subtitle_date{
+    display: inherit;
+  }
+  .education_subtitle_date{
+    float: inherit;
+  }
+}

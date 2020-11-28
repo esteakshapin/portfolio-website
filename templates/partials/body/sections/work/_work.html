@@ -1,0 +1,23 @@
+{% extends 'partials/body/sections/_section.html' %}
+
+
+{% block module_class_name %} work_module {% endblock %}
+
+{% block section_title %} Work {% endblock %}
+
+{% block body %}
+<link rel="stylesheet" href="static/css/work.css">
+<script src="static/js/work.js" charset="utf-8"></script>
+
+</script>
+{% include '/partials/body/sections/work/work_companies/talos/_talos_work_tile.html' %}
+{% include '/partials/body/sections/work/work_companies/acquafonte/_acquafonte_work_tile.html' %}
+{% include '/partials/body/sections/work/work_companies/covid_collection/_covid_collection_work_tile.html' %}
+{% include '/partials/body/sections/work/work_companies/private_tutor/_private_tutor_work_tile.html' %}
+
+<!-- if there are more than three work tiles show "show more" button -->
+<div class="show-more-btn-container">
+  <button type="button" name="show-more-button" id='show-more-button'>Show More</button>
+</div>
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends '/partials/body/sections/work/work_tiles/_work_tiles.html' %}
+{% set company_title='Covid Collection' %}
+{% set company_img_src='static/resources/covid_collection_logo.png' %}
+{% set company_role_title='Founder, Project Manager' %}
+{% set date='May 2020 - August 2020' %}
+
+{% block body_nav %}
+  <h2 class="body_nav_item active" onclick="body_nav_item_process(this)">Experience</h2>
+  <!-- <h2 class="body_nav_item" onclick="body_nav_item_process(this)">Reference</h2> -->
+{% endblock %}
+
+{% block body_content %}
+  <div class="body_nav_item_1_content">
+    {% include "/partials/body/sections/work/work_companies/covid_collection/_covid_collection_work_experience.html" %}
+  </div>
+{% endblock %}

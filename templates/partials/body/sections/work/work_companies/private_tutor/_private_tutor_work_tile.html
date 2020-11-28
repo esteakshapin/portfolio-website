@@ -1,0 +1,16 @@
+{% extends '/partials/body/sections/work/work_tiles/_work_tiles.html' %}
+{% set company_title='Private Tutoring' %}
+{% set company_img_src='static/resources/private_tutor_logo.jpg' %}
+{% set company_role_title='Tutor and Mentor' %}
+{% set date='July 2019 - Present' %}
+
+{% block body_nav %}
+  <h2 class="body_nav_item active" onclick="body_nav_item_process(this)">Experience</h2>
+  <!-- <h2 class="body_nav_item" onclick="body_nav_item_process(this)">Reference</h2> -->
+{% endblock %}
+
+{% block body_content %}
+  <div class="body_nav_item_1_content">
+    {% include "/partials/body/sections/work/work_companies/private_tutor/_private_tutor_work_experience.html" %}
+  </div>
+{% endblock %}

@@ -1,0 +1,19 @@
+.show-more-btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.show-more-btn-container button {
+  padding: 8px 16px;
+  border: none;
+  color: #fff;
+  background-color: #616161;
+  text-align: center;
+  cursor: pointer;
+}
+
+.show-more-btn-container button:hover{
+  color: black;
+  background-color: #ccc;
+
+}

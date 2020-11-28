@@ -1,0 +1,13 @@
+.section_title{
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 43px;
+  color: #F0F0F0;
+}
+
+
+.section{
+  padding: 2rem;
+}
