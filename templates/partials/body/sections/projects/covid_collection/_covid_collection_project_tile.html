@@ -1,0 +1,22 @@
+{% extends "/partials/body/sections/projects/_projects_tile.html" %}
+
+{% set title="Covid Collection" %}
+{% set project_img="static/resources/covid-collection-project-pic.png" %}
+{% set status="Summer 2020" %}
+{% set link="https://covidcollection202.wixsite.com/main" %}
+
+{% block tags %}
+
+{% with title='fund-raiser', tag_color='var(--project-tag-fund-raiser)'%}
+  {% include 'partials/body/sections/projects/_projects_tags.html' %}
+{% endwith %}
+
+{% with title='WIX', tag_color='var(--project-tag-wix)'%}
+  {% include 'partials/body/sections/projects/_projects_tags.html' %}
+{% endwith %}
+
+{% endblock %}
+
+{% block extended_info %}
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+{% endblock %}

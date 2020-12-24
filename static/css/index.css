@@ -39,12 +39,23 @@ html, body{
   /* project tile transition time */
   --project-tile-transition: max-height .2s;
 
+    /* tag color pallete */
+    --desert-sand: #ecc8aeff;
+    --middle-red: #d7907bff;
+    --medium-slate-blue: #7d83ffff;
+    --pearly-purple: #b3679bff;
+
   /* tag color for projects tile */
   --projects-tag-flask: #CED950;
   --projects-tag-jquery: #B1D49C;
   --projects-tag-gmap: #8A939C;
   --projects-tag-css: #D49C9C;
   --projects-tag-html:#52D1D9;
+  --project-tag-fund-raiser: var(--desert-sand);
+  --project-tag-wix: var(--pearly-purple);
+  --project-tag-flutter: var(--middle-red);
+  --project-tag-mobile: var(--medium-slate-blue); 
+
 
 }
 
